@@ -6,7 +6,7 @@ namespace BookService.Models
     public class Author
     {
         public int Id { get; set; }
-        [Required]
+        [Required] //this is an attribute
         public string Name { get; set; }
     }
 }
