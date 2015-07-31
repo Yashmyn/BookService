@@ -506,5 +506,30 @@
             Delete an author.
             </summary>
         </member>
+        <member name="M:BookService.Controllers.BooksController.GetBooks">
+            <summary>
+            Get all books.
+            </summary>
+        </member>
+        <member name="M:BookService.Controllers.BooksController.GetBook(System.Int32)">
+            <summary>
+            Get a book by ID.
+            </summary>
+        </member>
+        <member name="M:BookService.Controllers.BooksController.PutBook(System.Int32,BookService.Models.Book)">
+            <summary>
+            Update an existing book.
+            </summary>
+        </member>
+        <member name="M:BookService.Controllers.BooksController.PostBook(BookService.Models.Book)">
+            <summary>
+            Create a new book.
+            </summary>
+        </member>
+        <member name="M:BookService.Controllers.BooksController.DeleteBook(System.Int32)">
+            <summary>
+            Delete a book.
+            </summary>
+        </member>
     </members>
 </doc>

@@ -18,12 +18,18 @@ namespace BookService.Controllers
         private BookServiceContext db = new BookServiceContext();
 
         // GET: api/Books
+        /// <summary>
+        /// Get all books.
+        /// </summary>
         public IQueryable<Book> GetBooks()
         {
             return db.Books;
         }
 
         // GET: api/Books/5
+        /// <summary>
+        /// Get a book by ID.
+        /// </summary>
         [ResponseType(typeof(Book))]
         public async Task<IHttpActionResult> GetBook(int id)
         {
@@ -37,6 +43,9 @@ namespace BookService.Controllers
         }
 
         // PUT: api/Books/5
+        /// <summary>
+        /// Update an existing book.
+        /// </summary>
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutBook(int id, Book book)
         {
@@ -72,6 +81,9 @@ namespace BookService.Controllers
         }
 
         // POST: api/Books
+        /// <summary>
+        /// Create a new book.
+        /// </summary>
         [ResponseType(typeof(Book))]
         public async Task<IHttpActionResult> PostBook(Book book)
         {
@@ -87,6 +99,9 @@ namespace BookService.Controllers
         }
 
         // DELETE: api/Books/5
+        /// <summary>
+        /// Delete a book.
+        /// </summary>
         [ResponseType(typeof(Book))]
         public async Task<IHttpActionResult> DeleteBook(int id)
         {
