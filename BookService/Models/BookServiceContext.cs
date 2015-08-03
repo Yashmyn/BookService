@@ -16,12 +16,15 @@ namespace BookService.Models
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
     
         public BookServiceContext() : base("name=BookServiceContext")
-        {
+        {  // New code:
+            this.Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
         }
 
         public System.Data.Entity.DbSet<BookService.Models.Author> Authors { get; set; }
 
         public System.Data.Entity.DbSet<BookService.Models.Book> Books { get; set; }
+
+
     
     }
 }

@@ -23,7 +23,7 @@ namespace BookService.Controllers
         /// </summary>
         public IQueryable<Book> GetBooks()
         {
-            return db.Books;
+            return db.Books.Include(b => b.Author); //added .Include extension method
         }
 
         // GET: api/Books/5

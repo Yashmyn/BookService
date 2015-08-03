@@ -8,5 +8,6 @@ namespace BookService.Models
         public int Id { get; set; }
         [Required] //this is an attribute
         public string Name { get; set; }
+
     }
 }
