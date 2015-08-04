@@ -2,6 +2,7 @@
     var self = this;
     self.books = ko.observableArray();
     self.error = ko.observable();
+
     self.detail = ko.observable();
 
     self.getBookDetail = function (item) {
@@ -9,6 +10,7 @@
             self.detail(data);
         });
     }
+
 
     var booksUri = '/api/books/';
 
@@ -31,8 +33,9 @@
         });
     }
 
+
     // Fetch the initial data.
     getAllBooks();
-};
 
+}
 ko.applyBindings(new ViewModel());
